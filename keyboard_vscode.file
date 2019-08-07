@@ -1,0 +1,616 @@
+// Keybindings LINUX
+[
+  // # BASIC EDITING
+  // SELECT
+  // Select line                            ctrl+i
+  {
+    "key": "ctrl+i",
+    "command": "expandLineSelection",
+    "when": "editorTextFocus"
+  },
+  // Select word                            ctrl+d
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  // Select all occurrences of word         shift+ctrl+D
+  {
+    "key": "shift+ctrl+D",
+    "command": "editor.action.changeAll",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // ## DELETE
+  // Delete line                            shift ctrl K
+  {
+    "key": "shift+ctrl+k",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // ## Line editing
+  // Insert line up                         shift ctrl enter
+  {
+    "key": "shift+ctrl+enter",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Insert line down                       ctrl enter
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Move line up                           alt up
+  {
+    "key": "alt+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Move line down                         alt down
+  {
+    "key": "alt+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Join lines                             ctrl J
+  {
+    "key": "ctrl+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // ## COPY
+  // Copy line up                           ctrl+alt+up
+  {
+    "key": "ctrl+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Copy line down                         ctrl+alt+down
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // ## MULTIPLE CURSORS
+  // Insert cursor up                       ctrl alt up
+  {
+    "key": "ctrl+alt+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  // Insert cursor down                     ctrl alt down
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  // ## INDENTATION
+  // Indent line                            alt ]
+  {
+    "key": "alt+]",
+    "command": "editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Outdent line                           alt [
+  {
+    "key": "alt+[",
+    "command": "editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Reindent lines                         alt L R
+  {
+    "key": "alt+l r",
+    "command": "editor.action.reindentlines",
+    "when": "editorTextFocus"
+  },
+  // ## FOLDING
+  // Fold                                   alt L -
+  {
+    "key": "alt+l -",
+    "command": "editor.fold",
+    "when": "editorTextFocus"
+  },
+  // Fold all                               alt L alt -
+  {
+    "key": "alt+l alt+-",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus"
+  },
+  // Fold all subregions                    alt L shift alt -
+  {
+    "key": "alt+l shift+alt+-",
+    "command": "editor.foldRecursively",
+    "when": "editorTextFocus"
+  },
+  // Unfold                                 alt L =
+  {
+    "key": "alt+l =",
+    "command": "editor.unfold",
+    "when": "editorTextFocus"
+  },
+  // Unfold all                             alt L alt =
+  {
+    "key": "alt+l alt+=",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus"
+  },
+  // Unfold all subregions                  alt L shift alt =
+  {
+    "key": "alt+l shift+alt+=",
+    "command": "editor.unfoldRecursively",
+    "when": "editorTextFocus"
+  },
+  // Fold level #                           alt L #
+  {
+    "key": "alt+l 1",
+    "command": "editor.foldLevel1",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l 2",
+    "command": "editor.foldLevel2",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l 3",
+    "command": "editor.foldLevel3",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l 4",
+    "command": "editor.foldLevel4",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l 5",
+    "command": "editor.foldLevel5",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l 6",
+    "command": "editor.foldLevel6",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l 7",
+    "command": "editor.foldLevel7",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l 8",
+    "command": "editor.foldLevel8",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l 9",
+    "command": "editor.foldLevel9",
+    "when": "editorTextFocus"
+  },
+  // ## OTHERS
+  // Comment line toggle                    ctrl /
+  {
+    "key": "ctrl+/",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Uppercase                              alt K =
+  {
+    "key": "alt+k =",
+    "command": "editor.action.transformToUppercase",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Lowercase                              alt K -
+  {
+    "key": "alt+k -",
+    "command": "editor.action.transformToLowercase",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Sort lines ascending                   alt+l a
+  {
+    "key": "alt+l a",
+    "command": "editor.action.sortLinesAscending"
+  },
+  // Sort lines descending                  alt+l d
+  {
+    "key": "alt+l d",
+    "command": "editor.action.sortLinesDescending"
+  },
+  // # NAVIGATION
+  // Show all commands                      ctrl P
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.showCommands"
+  },
+  // Go to file                             alt O
+  {
+    "key": "alt+o",
+    "command": "workbench.action.quickOpen"
+  },
+  // Go to line                             alt G G
+  {
+    "key": "alt+g g",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "alt+g alt+g",
+    "command": "workbench.action.gotoLine"
+  },
+  // Go to definition                       alt G D
+  {
+    "key": "alt+g d",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  // Open definition to the side            alt G alt D
+  {
+    "key": "alt+g alt+d",
+    "command": "editor.action.openDeclarationToTheSide",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  // Peek definition                        alt G P
+  {
+    "key": "alt+g p",
+    "command": "editor.action.previewDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  // Show hover                             alt G H
+  {
+    "key": "alt+g h",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+g h",
+    "command": "editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  // Go to matching bracket                 ctrl shift \
+  {
+    "key": "shift+ctrl+\\",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  // Go back                                ctrl alt [
+  {
+    "key": "ctrl+alt+[",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus"
+  },
+  // Go forward                             ctrl alt ]
+  {
+    "key": "ctrl+alt+]",
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus"
+  },
+  // # EDITOR
+  // Move editor into above group            alt E up
+  {
+    "key": "alt+E up",
+    "command": "workbench.action.moveEditorToAboveGroup"
+  },
+  // Move editor into below group            alt E down
+  {
+    "key": "alt+E down",
+    "command": "workbench.action.moveEditorToBelowGroup"
+  },
+  // Move editor into left group            alt E left
+  {
+    "key": "alt+E left",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  // Move editor into right group            alt E right
+  {
+    "key": "alt+E right",
+    "command": "workbench.action.moveEditorToRightGroup"
+  },
+  // Move editor into next group            alt E alt /
+  {
+    "key": "alt+E alt+/",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  // Move editor group left                 alt E alt left
+  {
+    "key": "alt+e alt+left",
+    "command": "workbench.action.moveActiveEditorGroupLeft"
+  },
+  //Move editor group right                alt E alt right
+  {
+    "key": "alt+e alt+right",
+    "command": "workbench.action.moveActiveEditorGroupRight"
+  },
+  // Join editors groups                    alt E J | alt E alt J
+  {
+    "key": "alt+e j",
+    "command": "workbench.action.joinTwoGroups"
+  },
+  {
+    "key": "alt+e alt+j",
+    "command": "workbench.action.joinTwoGroups"
+  },
+  // Cycle editor groups                    alt shift E | alt E alt E
+  {
+    "key": "alt+e alt+e",
+    "command": "workbench.action.navigateEditorGroups",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+e alt+e",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
+  },
+  // Split editor                           alt E /
+  {
+    "key": "alt+e /",
+    "command": "workbench.action.splitEditor"
+  },
+  // Maximize editor group                  alt E = | alt E alt =
+  {
+    "key": "alt+e =",
+    "command": "workbench.action.maximizeEditor"
+  },
+  // Even editor groups                     alt E alt =
+  {
+    "key": "alt+e -",
+    "command": "workbench.action.evenEditorWidths"
+  },
+  // # DISPLAY
+  // Sidebar toggle                         alt M /
+  {
+    "key": "alt+m /",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  // Sidebar focus                          alt M alt+/
+  {
+    "key": "alt+m alt+/",
+    "command": "workbench.action.focusSideBar"
+  },
+  {
+    "key": "alt+m alt+/",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
+  },
+  // Focus on open editors                  alt M E
+  {
+    "key": "alt+m e",
+    "command": "workbench.files.action.focusOpenEditorsView"
+  },
+  // Focus on files Explorer                alt M F
+  {
+    "key": "alt+m f",
+    "command": "workbench.files.action.focusFilesExplorer"
+  },
+  // Show search                            alt M S
+  {
+    "key": "alt+m s",
+    "command": "search.action.focusActiveEditor",
+    "when": "searchInputBoxFocus && searchViewletVisible"
+  },
+  {
+    "key": "alt+m s",
+    "command": "workbench.action.findInFiles",
+    "when": "!searchInputBoxFocus"
+  },
+  {
+    "key": "alt+m s",
+    "command": "workbench.view.search",
+    "when": "!searchViewletVisible"
+  },
+  // Show search and replace                alt M R
+  {
+    "key": "alt+m r",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "alt+m r",
+    "command": "search.action.focusActiveEditor",
+    "when": "replaceInputBoxFocus && searchViewletVisible"
+  },
+  // Show source control                    alt M G
+  {
+    "key": "alt+m g",
+    "command": "workbench.view.scm"
+  },
+  // Show debug                             alt M B
+  {
+    "key": "alt+m b",
+    "command": "workbench.view.debug"
+  },
+  // Show extensions                        alt M X
+  {
+    "key": "alt+m x",
+    "command": "workbench.view.extensions"
+  },
+  // Panel toggle                           alt M -
+  {
+    "key": "alt+m -",
+    "command": "workbench.action.togglePanel"
+  },
+  // Panel maximize                         alt M =
+  {
+    "key": "alt+m =",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  // Show problems                          alt M P
+  {
+    "key": "alt+m p",
+    "command": "workbench.actions.view.problems"
+  },
+  // Show output                            alt M O
+  {
+    "key": "alt+m o",
+    "command": "workbench.action.output.toggleOutput"
+  },
+  // Show debug console                     alt M alt B
+  {
+    "key": "alt+m c",
+    "command": "workbench.debug.action.toggleRepl"
+  },
+  // Toggle integrated terminal             alt M T
+  {
+    "key": "alt+m t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  // Focus integrated terminal              alt M alt T
+  {
+    "key": "alt+m alt+t",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "alt+m alt+t",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  // Toggle zen mode                        alt M Z
+  {
+    "key": "alt+m z",
+    "command": "workbench.action.toggleZenMode"
+  },
+  // Toggle full screen                     alt M alt F
+  {
+    "key": "alt+m alt+f",
+    "command": "workbench.action.toggleFullScreen"
+  },
+  // Markdown preview                       alt M M
+  {
+    "key": "alt+m m",
+    "command": "markdown.showPreview",
+    "when": "editorLangId == 'markdown'"
+  },
+  // Markdown preview to side               alt M alt M
+  {
+    "key": "alt+m alt+m",
+    "command": "markdown.showPreviewToSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  // # PREFERENCES
+  // Open preferences                       ctrl ,
+  {
+    "key": "ctrl+,",
+    "command": "workbench.action.openGlobalSettings"
+  },
+  // Keyboard shortcuts                     alt K alt S
+  {
+    "key": "alt+k alt+s",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "alt+k alt+k",
+    "command": "keybindings.editor.defineKeybinding",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "alt+k alt+k",
+    "command": "editor.action.defineKeybinding",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'json'"
+  },
+  // User snippets                          alt K alt U
+  {
+    "key": "alt+k alt+u",
+    "command": "workbench.action.openSnippets"
+  },
+  // Insert snippet                         alt K U
+  {
+    "key": "alt+k u",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus"
+  },
+  // Color theme                            alt K alt T
+  {
+    "key": "alt+k alt+t",
+    "command": "workbench.action.selectTheme"
+  },
+  // Change language                        alt K alt L
+  {
+    "key": "alt+k l",
+    "command": "workbench.action.editor.changeLanguageMode"
+  },
+  {
+    "key": "alt+k alt+l",
+    "command": "workbench.action.editor.changeLanguageMode"
+  },
+  // Format selection                       alt K F
+  {
+    "key": "alt+k f",
+    "command": "editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly"
+  },
+  // Format document                        alt K alt F
+  {
+    "key": "alt+k alt+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  // Copy path of active file               alt K P
+  {
+    "key": "alt+k p",
+    "command": "workbench.action.files.copyPathOfActiveFile"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+    "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "ctrl+shift+alt+i",
+    "command": "editor.action.inspectTMScopes"
+  },
+  {
+    "key": "alt+r l",
+    "command": "extension.runLineOnRspec",
+    "when": "editorLangId == 'ruby'"
+  },
+  {
+    "key": "meta+l",
+    "command": "-extension.runLineOnRspec",
+    "when": "editorLangId == 'ruby'"
+  },
+  {
+    "key": "alt+r f",
+    "command": "extension.runFileOnRspec",
+    "when": "editorLangId == 'ruby'"
+  },
+  {
+    "key": "alt+meta+l",
+    "command": "-extension.runFileOnRspec",
+    "when": "editorLangId == 'ruby'"
+  },
+  {
+    "key": "alt+r p",
+    "command": "extension.runOnLastSpec",
+    "when": "editorLangId == 'ruby'"
+  },
+  {
+    "key": "meta+y",
+    "command": "-extension.runOnLastSpec",
+    "when": "editorLangId == 'ruby'"
+  }
+]
