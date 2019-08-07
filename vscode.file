@@ -1,0 +1,97 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "files.associations": {
+        "*.coffee.erb": "coffeescript"
+        "*.js.erb": "javascript"
+    },
+    "git.autofetch": true,
+    "window.zoomLevel": 0,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "ruby.lint": {
+        "reek": true,
+        "rubocop": {
+            "lint": true,
+            "rails": true
+        },
+        "ruby": true, //Runs ruby -wc
+        "fasterer": true,
+        "debride": true,
+        "ruby-lint": true
+    },
+    "[ruby]": {
+        "editor.formatOnSave": false,
+    },
+    "ruby.format": "rubocop",
+    "editor.formatOnSaveTimeout": 1500,
+    "prettier.semi": false,
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.formatOnSave": false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "workbench.colorCustomizations": {
+        "[Tomorrow Night Blue]": {
+            "activityBar.background": "#0f0e0e",
+            "sideBar.background": "#1b1717",
+            "activityBar.dropBackground": "#1b1717",
+            "editor.background": "#1b1717",
+            "editorGroupHeader.tabsBackground": "#1b1717",
+            "tab.activeBackground": "#1b1717",
+            "tab.inactiveBackground": "#0f0e0e",
+            "statusBar.background": "#0f0e0e",
+            "titleBar.activeBackground": "#1b1717",
+            "editor.lineHighlightBackground": "#0f0e0e",
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Monokai Dimmed]": {
+            "textMateRules": [
+                {
+                    "name": "Class",
+                    "scope": [
+                        "entity.name.type",
+                        "support.class"
+                    ],
+                    "settings": {
+                        "foreground": "#aeaeae",
+                        "fontStyle": "bold"
+                    },
+                },
+                {
+                    "name": "Array",
+                    "scope": [
+                        "punctuation.section.array.end.ruby",
+                        "punctuation.section.array.begin.ruby"
+                    ],
+                    "settings": {
+                        "foreground": "#ffd900",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "variable.other.constant",
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "punctuation.definition.variable",
+                    "settings": {
+                        "foreground": "#ffd900"
+                    }
+                }
+            ]
+        }
+    },
+    "workbench.colorTheme": "Monokai Dimmed",
+    "terminal.integrated.shell.linux": "zsh",
+    "terminal.integrated.shellArgs.linux": ["-l"],
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "breadcrumbs.enabled": false
+}
