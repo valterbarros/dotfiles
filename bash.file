@@ -1,0 +1,6 @@
+alias gs="git status"
+alias be="bundle exec"
+
+cd .
+
+export ERL_AFLAGS="-kernel shell_history enabled"
